@@ -3,7 +3,7 @@ const router = require("express").Router();
 // jwt
 const jwt = require("jsonwebtoken");
 
-// validar campoes requeridos
+// validar campos requeridos
 const Joi = require("@hapi/joi");
 
 // importacion de modelo de  mongo DB

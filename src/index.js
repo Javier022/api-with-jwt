@@ -34,10 +34,11 @@ mongoose
 const authRoutes = require("./routes/auth");
 const validateToken = require("./routes/validate-token");
 const admin = require("./routes/admin");
-const { options } = require("./routes/auth");
 
-// route middlewares
+// route
 app.use("/api/user", authRoutes);
+
+// route with middleware
 app.use("/api/admin", validateToken, admin);
 
 // example
